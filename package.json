@@ -32,7 +32,8 @@
     "prepublishOnly": "npm run build",
     "build:examples": "webpack --mode production",
     "deploy:examples": "gh-pages -d examples/dist",
-    "publish:examples": "npm run build:examples && npm run deploy:examples"
+    "publish:examples": "npm run build:examples && npm run deploy:examples",
+    "prepare": "npm run build"
   },
   "prettier": {
     "proseWrap": "preserve",
