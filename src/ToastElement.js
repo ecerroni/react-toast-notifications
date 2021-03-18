@@ -179,7 +179,7 @@ const toastStates = (placement: Placement) => ({
   entering: { transform: getTranslate(placement) },
   entered: { transform: 'translate3d(0,0,0)' },
   exiting: { transform: 'scale(0.66)', opacity: 0 },
-  exited: { transform: 'scale(0.66)', opacity: 0 },
+  exited: { transform: getTranslate(placement) },
 });
 
 const ToastElement = ({
